@@ -4,47 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/x-icon"
         href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP8VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABEREQABEAAAAAAAAAARAAAAAAAAAAEQAAAAAAAAABEAAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
 
     <title>Title's page</title>
 
     <!-- # Javascript # -->
-    <script defer type="module" src="./src/web/index.js"></script>
-    <!-- <script defer src="https://unpkg.com/htmx.org@2.0.0"
+    <script type="module" src="./simulation.js"></script>
+    <script defer src="https://unpkg.com/htmx.org@2.0.0"
         integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw"
-        crossorigin="anonymous"></script> -->
-    <script defer src="./pkg/htmx.js"></script>
+        crossorigin="anonymous"></script>
+    <!-- <script defer src="../../pkg/htmx.js"></script> -->
 
 
     <!-- # CSS # -->
     <!-- ## Base (essential) CSS ## -->
-    <link rel="stylesheet" href="./src/web/base/base.css">
+    <link rel="stylesheet" href="./base/base.css">
+    <link rel="stylesheet" href="./base/simulation.css">
     <!-- ## Defer non-critical CSS: https://web.dev/articles/defer-non-critical-css ## -->
-    <link rel="preload" href="./src/web/base/unessential.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./base/unessential.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- ## Fallback for non-JS users ## -->
     <noscript>
-        <link rel="stylesheet" href="./src/web/base/unessential.css">
+        <link rel="stylesheet" href="./base/unessential.css">
     </noscript>
 
 </head>
 
 <body>
-
-    <h1>¡Hola!</h1>
-
-    <a href="./src/web/study.html">Estudio</a>
-    <a href="./src/web/simulation.html">Simulacro</a>
-    <a href="./src/web/register.html">Registro</a>
-    <a href="./src/web/login.html">Acceso</a>
-
-    <!-- <a href="./src/web/protected.html">Recursos</a> -->
-    <!-- <a href="./src/web/htmx.html">HTMX</a> -->
+    <h1>Modo simulacro</h1>
+    <a href="/">Inicio</a>
 
     <section>
-
+        <h2>Formulario de Preguntas</h2>
+        <div id="mockContainer" class="container">
+            <form id="mockForm"></form>
+            <div id="modal" class="modal"></div>
+        </div>
     </section>
 
 </body>

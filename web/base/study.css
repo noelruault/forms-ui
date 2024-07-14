@@ -1,0 +1,122 @@
+body {
+    min-height: 100vh;
+    align-content: center;
+    margin-top: -35vh;
+    background-color: rgb(250, 250, 252);
+}
+
+article {
+    width: 80%;
+    max-width: 800px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.question p:first-child {
+    margin-right: 10px;
+}
+
+article .body {
+    border-radius: 25px 25px 0px 0px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 10px 0px;
+    padding: 30px;
+}
+article .footer{
+    background-color: #f1f1f1;
+    border-top: 1px solid rgb(223, 222, 228);
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 10px 0px;
+}
+article .footer .nav {
+    display: flex;
+    justify-content: space-between;
+}
+article .footer > * {
+    padding: 30px;
+}
+
+.explanation > p {
+    white-space: pre-line; /*pre-line, pre-wrap*/
+}
+
+[data-order='first'] {
+    z-index: 3;
+}
+
+[data-order='first'] .body {
+    min-height: 400px;
+}
+
+[data-order='second'] {
+    z-index: 2;
+    margin-top: 40px;
+    transform: translateX(-10px);
+}
+
+[data-order='second'] .body {
+    min-height: 400px;
+}
+
+[data-order='third'] {
+    z-index: 1;
+    margin-top: 60px;
+    transform: translateX(-20px);
+}
+
+[data-order='third'] .body {
+    min-height: 400px;
+}
+
+section .answers {
+    list-style-type: none;
+}
+
+section .answers:not(:last-child) {
+    margin-bottom: 2vh;
+}
+
+section li {
+    margin-left: 1vh;
+}
+
+section li:not(:last-child) {
+    margin-bottom: 1vh;
+}
+
+.article.hidden {
+    display: none;
+}
+
+.article .body {
+    /* margin-bottom: 20px; */
+}
+
+.article .answers span {
+    display: inline-block;
+    width: 20px;
+}
+
+.article .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article .footer .nav {
+    width: 100%;
+}
+
+.article .footer .explanation {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.article .footer .explanation[hidden] {
+    display: none;
+}

@@ -1,0 +1,65 @@
+:root {
+    --essential: "true";
+    --duration: 1s;
+    --easing: cubic-bezier(.5, 0, .5, 1);
+
+    /* --- Colors --- */
+    --pink-soft: #e7c8fb;
+    --white: #fffffd;
+
+    --purple-light: #9978fe;
+    --purple-dark: #7c57f9;
+    --gray-light: #bdbdbd;
+    --gray-dark: #e5e5e5;
+    --pink-light: #fc7ce9;
+    --pink-dark: #ec61d5;
+    --green-light: #68e1ac;
+    --green-dark: #04d686;
+    --red-light: #fc5e85;
+    --red-dark: #d44c6d;
+    --black-light: #4b4b4b;
+    --black-dark: #27292d;
+    --yellow-light: #e9fd71;
+    --yellow-dark: #d0e461;
+    /* --- End of colors --- */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#status-css-base-tag {
+    display: none;
+}
+
+#status-css-base:after {
+    color: green;
+    content: ': online';
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section li {
+    margin-left: 1vh;
+}
+
+section li:first-child {
+    margin-top: 1vh;
+}
+
+section ul:not(:last-child) {
+    margin-bottom: 2vh;
+}
+
+section li:not(:last-child) {
+    margin-bottom: 1vh;
+}
+
+section .question {
+    display: flex;
+    flex-direction: row;
+}
